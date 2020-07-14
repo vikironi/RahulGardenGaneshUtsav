@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JQuery -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+    <!-- Preloader Script -->
+    <script src="./assets/js/preloader.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon  -->
+    <link rel="icon" href="./assets/images/logo2.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <title>Rahul Gardencha Raja</title>
+
+    <base href="\">
+
+    <script>
+        $(document).ready(function(){
+            $(".button-select.arti").click(function(){
+            $("section").hide();
+            $("aside").show();
+            });
+
+            $("#home").click(function(){
+            $("section").show();
+            $("aside").hide();
+            });
+
+            $(".aNames").click(function(){
+            $("#imagesel").attr("src", $(this).attr("title"));
+            });    
+
+
+        });    
+</script>
+
+</head>
+<body>
+
+
+<!-- Preloader -->
+<div class="loader">
+    <span class="preload">    
+    </span>
+</div>
+
+<!-- end of preloader -->
+
+
+<header class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <img src="./assets/images/image1.png" alt="Rahul Gardencha Raja" id="home">
+        </div>
+    </div>
+</header>
+
+<section class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button type="submit" class="button-select arti" >Arti Pustak</button>
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="button-select gallery" >Gallery</button>
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="button-select events" >Events</button>
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="button-select " >Login</button>
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="button-select" >Login</button>
+        </div>
+        <div class="col-md-4">
+            <button type="submit" class="button-select AboutUs" >About Us</button>
+        </div>
+    </div>    
+</section>
+
+<aside class="container-fluid m-0 p-0">
+    
+    <div class="tab">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><span class="marathi"><b>ARTI</b></span></a>
+            <br>
+            <a href="#" title="./assets/images/arti/04.png" class="aNames">1.<span class="marathi"><b>सुखकर्ता दुःखहर्ता</b></span></a>
+            <a href="#" title='./assets/images/arti/05.png' class="aNames">2.<span class="marathi"><b>शंकराची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/06.png' class="aNames">3.<span class="marathi"><b>देवीची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/07.png' class="aNames">4.<span class="marathi"><b>पांडुरंगाची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/09.png' class="aNames">6.<span class="marathi"><b>श्री दत्ताची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/10.png' class="aNames">8.<span class="marathi"><b>विठ्ठलाची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/11.png' class="aNames">9.<span class="marathi"><b>आरती ज्ञानदेव</b></span></a>
+            <a href="#" title='./assets/images/arti/12.png' class="aNames">10.<span class="marathi"><b>तुकाशमाची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/13.png' class="aNames">11.<span class="marathi"><b>गणपती बाप्पाची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/14.png' class="aNames">12.<span class="marathi"><b>गणरायाची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/15.png' class="aNames">14.<span class="marathi"><b>साईबाबांची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/17.png' class="aNames">15.<span class="marathi"><b>एकनाथाची आरती</b></span></a>
+            <a href="#" title='./assets/images/arti/18.png' class="aNames">16.<span class="marathi"><b>मोरया मोरया...</b></span></a>
+            <a href="#" title='./assets/images/arti/19.png' class="aNames">17.<span class="marathi"><b>प्रार्थना</b></span></a>
+            <a href="#" title='./assets/images/arti/20.png' class="aNames">18.<span class="marathi"><b>प्रार्थना-2</b></span></a>
+            <a href="#" class="aNames" onclick="closeNav()"><span class="marathi"><b>Close</b></span></a>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          <span style="font-size:25px;cursor:pointer" onclick="openNav()" class="navbartab">
+            <i class="fa fa-bars" aria-hidden="true"></i><span class="marathi"><b>अनुक्रमणिका</b></span></span>
+    </div>
+
+    <div class="tab-img" ng-app="MyApp" ng-controller="MyController">
+            <img src='./assets/images/arti/04.png' alt="" id="imagesel">
+    </div>
+</aside>
+
+
+
+<script>
+    var imsrc = './assets/images/arti/04.png';
+    imagesrc = imsrc;
+
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "300px";
+  }
+  
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  function onclick(imsrc) {
+  imagesrc = imsrc;
+  document.getElementById("imagesel").src = imsrc;
+  document.getElementById("mySidenav").style.width = "0";
+  }
+
+
+
+</script>
+
+
+</body>
+</html>
